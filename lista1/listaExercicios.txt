@@ -1,0 +1,42 @@
+1a) Inteligência: é a capacidade de poder raciocinar, pensar, compreender e interpretar.
+
+1b) Inteligência Artificial: descreve o desenvolvimento de mecanismos e dispositivos tecnológicos que consigam simular a inteligência humana ou seja imitar o sistema de raciocínio dos seres humanos.
+
+1c) Aprendizado de Máquina: é o processo de induzir inteligência em uma máquina sem que ela seja explicitamente programada a partir de uma grande quantidade de dados.
+
+2) Resposta: Desempenho – D: a) a probabilidade de prever corretamente o tempo de uma data futura.
+
+3) Resposta:
+
+Tarefa – T: a Tarefa de previsão do tempo
+
+Experiencia – E: o processo do algoritmo que examina uma grande quantidade de dados climáticos históricos.
+
+4) Tarefa de Classificação: o rótulo y, pertence a um conjunto finito de valores.
+
+5) Tarefa de Regressão: o rótudol y, pertence a um conjunto de valores. Por exemplo: valores reais.
+
+6) Se refere no algoritmo de aprendizado por esforço Q-Learning
+
+7) Se refere no algoritmo k-médias (k-means)
+
+8)
+
+a) Alocação de recursos em redes móveis (e.g. LTE, 5G-NR, etc.): No artigo científico do link a seguir (https://ieeexplore.ieee.org/abstract/document/8359094), foi utilizado o algoritmo Deep Learning: RL-LSTM (deep Reinforcement Learning-RL: são auto-organizadores para alocação de recursos).O artigo propõe uma solução para o problema de alocação de recursos das pequenas estações base LTE-LAA (SBSs - small base stations).Para resolver o problema, foi desenvolvido um algoritmo de aprendizado profundo baseado em RL-LSTM. O algoritmo permite aos SBSs aprender uma sequência de ações futuras no tempo de operação com base em uma sequência histórica de tráfego. Isso permite que cada SBS decida seu esquema de alocação de espectro autonomamente com informações limitadas sobre o estado da rede.
+
+b) Mitigação de colisões em redes sem-fio e móveis: No Artigo científico a seguir (https://ieeexplore.ieee.org/abstract/document/8684944), foi utilizado o algoritmo Deep Learning: Q-Learning. O artigo propõe uma solução para o problema de colisão de redes sem fio e móveis. O Q-Learning foi usado para resolver o problema de modo melhorar o Slotted ALOHA, pois o Q-Learning atinge o dobro da taxa de transferência máxima em relação ao Slotted ALOHA, além de ser mais eficiente. Q-Learning pode ser treinado com dados reais capturados de diferentes fontes desconhecidas com diferentes tecnologias de rede.
+
+c) Projeto e otimização de esquemas de modulação e codificação: No artigo científico do link a seguir (https://arxiv.org/abs/1912.04030), foi criada uma framework baseada no algoritmo de Q-Learning que permite a radiobase escolher a modulação e esquema de codificação que maximiza a eficiência espectral, e ainda mantém uma taxa baixa de erro de bloco. Nessa framework, a radiobase escolhe o esquema de codificação baseado na qualidade de canal reportada pelo equipamento final. A transmissão feita com base no esquema de codificação e os resultados dessa transmissão são então convertidos pela radiobase em recompensas usadas para aprender a relação entre o esquema de codificação e a qualidade do canal. Comparado com as técnicas tradicionais, a framework proposta possui um desempenho superior no que toca a eficiência espectral e baixa probabilidade de erro de bloco.
+
+d) Sensoriamento espectral: No artigo científico do link a seguir (https://ieeexplore.ieee.org/document/8685112), foi usada uma rede neural convulucional para sensoriar e determinar a probabilidade do canal estar a ser usado. A diferença da abordagem proposta é que não requer nenhum modelo probabilisto de SNR nem um modelo de padrão de usuário primário. Ademais, o algoritmo proposto está em constante aprendizado, fazendo uso de dados sensoriados anteriormente e também de dados de sensoriamentos presentes, inferindo ele próprio a actividade do usuário primário. Os resultados das simulações demonstram a eficiência dessa técnica.
+
+e) Posicionamento e localização em ambientes indoor: No artigo científico do link a seguir (https://ieeexplore.ieee.org/document/8792193), foi usada uma técnica de aprendizado por reforço denominada PFRL para criar um sistema de localização indoor robusto, capaz de determinar a probabilidade de um usuário estar em um compartimento interno. Os autores mapeiam os possíveis locais onde o usuário poderá estar usando uma cadeia de Markov, no qual a probabilidade de transição de um lugar para o outro é mapeada. A medida que o usuário move-se dentro da casa o algoritmo vai preenchendo as probabilidades de transição.
+
+f) Roteamento de redes:  No artigo científico do link a seguir(https://ieeexplore.ieee.org/abstract/document/8541460), o algoritmo de machine learning que envolve clusterização é avaliado em redes tolerantes a atrasos para determinar os nós vizinhos com maior probabilidade de enviar a mensagem para uma localização desejada baseado no histórico de entrega. Os algoritmos de classificação usados foram o Naive Bayes, Decision Tree e K-NN. Os resultados demonstram que o uso de classficadores é um método viável para predizer o tráfico da rede e determinar quais nós podem ser usados com maior confiabilidade, chegando inclusive a reduzir o overhead.
+
+g) Detecção e estimação de canal em sistemas de transmissão ópticos:  No artigo científico do link a seguir (https://ieeexplore.ieee.org/document/8761449), utiliza o método de simulação e os dados de treinamento são gerados de acordo a uma expressão matemática. Usa uma rede neural para detectar e estimar os símbolos transmitidos que não dependem do modelo de um canal.
+
+h) Pré-distorção digital de não-linearidades de front-ends de RF:  No artigo científico do link a seguir (https://ieeexplore.ieee.org/document/5340581), utiliza o algoritmo de Levenberg-Marquardt. O problema foi solucionado com o uso de uma técnica de pré-distorção digital baseada em redes neurais treinadas por meio do algoritmo de retropropagação Levenberg-Marquardt é validada num ambiente real.
+
+
+i) Segurança e robustez em redes de comunicação:  No artigo científico do link a seguir (https://ieeexplore.ieee.org/document/8376973) os autores usam Redes adversárias generativas para que a rede possa aprender como defender de ataques de jamming. Como é típico nas redes adversariais, uma rede neural estava encarregue de lançar ataques de jamming e a outra tentava criar estratégias de defesa. O defensor é bem sucedido se a SINR no receptor for maior que um limiar β, e um pequeno time slot é alocado para que o receptor possa enviar um feedback positivo ao transmissor. O atacante também é capaz de sensoriar o espectro e predizer se haverá uma comunicação com sucesso (com um ACK) ou sem sucesso (sem ACK) no time slot reservado. Se o atacante detecta que haverá uma transmissão bem sucedida ele bloqueia a transmissao no time slot reservado para o ACK.

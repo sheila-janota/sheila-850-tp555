@@ -16,9 +16,9 @@ Experiencia – E: o processo do algoritmo que examina uma grande quantidade de 
 
 5) Tarefa de Regressão: o rótudol y, pertence a um conjunto de valores. Por exemplo: valores reais.
 
-6) Se refere no algoritmo de aprendizado por esforço Q-Learning
+6) Usaria um algoritmo de aprendizado por reforço como por exemplo o Q-Learning
 
-7) Se refere no algoritmo k-médias (k-means)
+7) Usaria um algoritmo de clusterização como por exemplo o k-médias (k-means)
 
 8)
 

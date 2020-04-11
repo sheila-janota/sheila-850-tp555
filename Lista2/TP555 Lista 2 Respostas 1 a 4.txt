@@ -1,0 +1,40 @@
+----------------------  Lista de Exercícios 2 - Respostas das Questões 1 á 4 ---------------------
+
+1-R: Se tivesse um conjunto de treinamento com milhares de features usaria algoritmos de aproximação linear como por exemplo os algoritmos de      Gradiente Descendente (Batch, Mini-Batch ou GD-Estocástico ).
+
+
+2-R: A técnica de regressão linear que pode sofrer com escalas muito diferentes é o escalonamento de features. 
+   - Se o escalonamento não for feito, um algoritmo de aprendizado de máquina tende a dar mais importância a valores
+     maiores e dar menos importância a valores menores, independentemente da unidade dos valores.
+
+     Os algoritmos de aprendizado de máquina não apresentam bom desempenho quando as features têm escalas muito diferentes.     
+     A seguir tem a descrição de como os algoritmos podem ser afetados pelo efeito de escalas muito diferentes:
+
+   - Algoritmos de aprendizado de máquina funcionam com números e não tem conhecimento do que esses números ou suas unidades 
+     representam.  
+     Ex.: Um peso de 75 kg e uma distância de 75 quilômetros representam duas coisas completamente diferentes - isso nós, 
+     humanos, podemos entender  facilmente. Mas para uma máquina, ambos valores 75 são a mesma coisa, independentemente do 
+     fato de as unidades de ambos serem diferentes.
+
+   - Algoritmos de aprendizado de máquina que usam a distância como métrica de erro, calculam a distância entre dois pontos pela distância      euclidiana. 
+     Se uma das features tiver uma faixa de valores muito maior do que o de outra feature, o cálculo da distância será regido por essa feature em        particular (ou seja a de maior valor numérico).
+
+     Para mitigar o problema pode ser usado a técnica de escalonamento de features.
+   - O escalonamento de features é uma técnica para padronizar/normalizar as features em um intervalo fixo. É realizada durante o pré-processamento
+     de dados para lidar com magnitudes, valores ou unidades que tenham grandes variações de valores.
+     Portanto, a variação de todas as features deve ser escalonada para que cada feature contribua com mesma importância para o cálculo da      distância(erro).
+    As formas mais comuns de escalonamento são: Normalização Mín-Max, Padronização.
+
+
+3-R: Usando o gradiente descendente em batelada, se eu perceber que o erro aumenta constantemente - está ocorrendo uma divergência.
+     A divergência pode ser consertado com base na escolha do passo de aprendizagem. O passo de aprendizagem deve ser explorado para encontrar o         melhor valor que acelere a descida do gradiente(ou seja, acelere a convergência).
+
+
+4-R: O Gradiente Descendente Estocástico (Online ou Incremental) - chega mais rapidamente à vizinhança da solução ótima, ou seja,
+     - Convergência mais rápida.
+     - Boas estratégias para modificação do passo de aprendizagem garantem a convergência.
+
+     O Batch - é o que realmente tem convergência garantida - caminha diretamente para a solução ótima, é mais demorado para atingir a           convergência.
+
+     O Mini-Batch - O progresso do mini-batch é menos irregular do que com o SGD.
+     - Boas estratégias para modificação do passo de aprendizagem garantem a convergência.

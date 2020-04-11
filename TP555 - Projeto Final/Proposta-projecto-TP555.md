@@ -2,12 +2,10 @@ Proposta para o projecto final TP555
 
 Prof. Doutor Felipe Augusto Pereira de Figueiredo
 
-|         Alunos           |
-| ------------------------ |
+
 | Nome | Matrícula - Curso |
 | ---- | ----------------- |
 | Mauro Alexandre Amaro da Cruz | 6 - Doutorado  |
-| ----------------------------- | -------------- |
 | Sheila Cássia da Silva Janota | 850 - Mestrado |
 
 

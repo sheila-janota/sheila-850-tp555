@@ -1,0 +1,14 @@
+----------------------  Lista de Exercícios 3 - Respostas da Questão 1  --------------------
+
+1. Suponha que você esteja usando regressão polinomial. Você plota as curvas de
+aprendizado e percebe que há uma grande diferença entre o erro de treinamento e o
+erro de validação. O que está acontecendo? Quais são as três maneiras de resolver
+isso?
+
+1-R: Quando há uma grande diferença entre as curvas do erro de treinamento e validação, 
+indica que o moodelo está sobre-ajustado ou seja, o modelo tem um desempenho melhor nos dados de
+treinamento do que nos dados de validação.
+
+Para resolver esse problema é necessário diminuir a ordem do modelo ou aumentar os dados do conjunto de treinamento.
+
+  
